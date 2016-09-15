@@ -1,0 +1,21 @@
+<ion-view view-title="Add Chat">
+        <ion-nav-buttons side="left">
+             <button class="button button-clear" ng-click="close()"></button>
+        </ion-nav-buttons>
+        <ion-nav-buttons side="right">
+            <button class="button button-icon ion-ios-upload" ng-click="confirm()"></button>
+        </ion-nav-buttons>
+        <ion-content>
+            <div class="list list-inset">
+                <label class="item item-input item-floating-label">
+                <span class="input-label">Name</span>
+                <input type="text" placeholder="Name" ng-model="newChat.name">
+                </label>
+                <label class="item item-input item-floating-label">
+                <span class="input-label">LastText</span>
+                <input type="text" placeholder="Last Text" ng-model="newChat.lastText">
+                </label>
+            </div>
+
+        </ion-content>
+    </ion-view>
